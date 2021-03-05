@@ -41,14 +41,14 @@ $("#chat-button").click(function(){
 });
 
 $("#add-group-button").click(function(){
-    var group_name = $("#name-group").val();
+    var group_name = $("#name-group-modifie").val();
     connection.invoke("AddToGroup", group_name).catch(function(error){
         return console.error(error.toString());
     });
 });
 
 $("#remove-group-button").click(function(){
-    var group_name = $("#name-group").val();
+    var group_name = $("#name-group-modifie").val();
     connection.invoke("RemoveFromGroup", group_name).catch(function(error){
         return console.error(error.toString());
     });
