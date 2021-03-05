@@ -5,15 +5,18 @@ namespace SignalrApp.Hubs
 {
     public class ChatHub : Hub
     {
-        public Task SendMessage(string user, string message)
-        {
-            return Clients.All.SendAsync("ReceiveMessage", user, message);
-        }
         public string GetConnectionId()
         {
             return Context.ConnectionId;
         }
-
+        public Task SendMessageStart(string user, string message)
+        {
+            return Clients.All.SendAsync("ReceiveMessageStart", user, message);
+        }
+        public Task SendMessageToAll(string user, string message)
+        {
+            return Clients.All.SendAsync("ReceiveMessage", user, message);
+        }
         public async Task AddToGroup(string groupName)
         {
             await Groups.AddToGroupAsync(Context.ConnectionId, groupName);

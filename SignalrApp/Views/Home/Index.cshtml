@@ -1,22 +1,23 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
 }
-
+@section Scripts {
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/microsoft-signalr/5.0.3/signalr.min.js"></script>
+    <script src="~/js/chat.js"></script>
+}
 <div class="text-center">
     <div class="row">
         <div class="col-6">
-            <form>
-                <div class="form-group">
-                    <label for="username">Username</label>
-                    <input type="text" class="form-control" id="username" aria-describedby="emailHelp"
-                        placeholder="Username">
-                </div>
-                <div class="form-group">
-                    <label for="content">Content</label>
-                    <input type="text" class="form-control" id="content" placeholder="Content">
-                </div>
-                <button id="chat-button" type="submit" class="btn btn-primary">Submit</button>
-            </form>
+            <div class="form-group">
+                <label for="username">Username</label>
+                <input type="text" class="form-control" id="username" aria-describedby="emailHelp"
+                    placeholder="Username">
+            </div>
+            <div class="form-group">
+                <label for="content">Content</label>
+                <input type="text" class="form-control" id="content" placeholder="Content">
+            </div>
+            <button id="chat-button" type="submit" class="btn btn-primary">Submit</button>
         </div>
     </div>
     <div class="row">
@@ -46,6 +47,3 @@
         </div>
     </div>
 </div>
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/microsoft-signalr/5.0.3/signalr.min.js"></script>
-<script src="~/js/chat.js"></script>
