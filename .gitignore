@@ -1,0 +1,37 @@
+*.swp
+*.*~
+project.lock.json
+.DS_Store
+*.pyc
+nupkg/
+
+# Visual Studio Code
+.vscode
+
+# Rider
+.idea
+
+# User-specific files
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Build results
+SignalrApp/[Dd]ebug/
+SignalrApp/[Dd]ebugPublic/
+SignalrApp/[Rr]elease/
+SignalrApp/[Rr]eleases/
+SignalrApp/x64/
+SignalrApp/x86/
+SignalrApp/build/
+SignalrApp/bld/
+SignalrApp/[Bb]in/
+SignalrApp/[Oo]bj/
+SignalrApp/[Oo]ut/
+SignalrApp/msbuild.log
+SignalrApp/msbuild.err
+SignalrApp/msbuild.wrn
+
+# Visual Studio 2015
+.vs/

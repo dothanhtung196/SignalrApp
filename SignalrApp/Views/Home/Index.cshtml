@@ -1,0 +1,51 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <div class="row">
+        <div class="col-6">
+            <form>
+                <div class="form-group">
+                    <label for="username">Username</label>
+                    <input type="text" class="form-control" id="username" aria-describedby="emailHelp"
+                        placeholder="Username">
+                </div>
+                <div class="form-group">
+                    <label for="content">Content</label>
+                    <input type="text" class="form-control" id="content" placeholder="Content">
+                </div>
+                <button id="chat-button" type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-6">
+            <form>
+                <div class="form-group">
+                    <label for="username-group">Username</label>
+                    <input type="text" class="form-control" id="username-group" aria-describedby="emailHelp"
+                        placeholder="Username">
+                </div>
+                <div class="form-group">
+                    <label for="content-group">Content</label>
+                    <input type="text" class="form-control" id="content-group" placeholder="Content">
+                </div>
+                <button id="chat-group-button" type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+        <div class="col-6">
+            <form>
+                <div class="form-group">
+                    <label for="group">Group</label>
+                    <input type="text" class="form-control" id="group" Groupcribedby="emailHelp"
+                        placeholder="Group">
+                </div>
+                <button id="add-group-button" type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/microsoft-signalr/5.0.3/signalr.min.js"></script>
+<script src="~/js/chat.js"></script>
